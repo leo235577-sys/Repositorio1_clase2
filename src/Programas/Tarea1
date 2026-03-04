@@ -10,7 +10,7 @@ public class Calculo {
 
     public static void main(String[] args) {
 
-        double venta1, venta2, venta3, tv, promedio;
+        double venta1, venta2, venta3, venta4, tv, promedio;
         String empleado;
 
         Scanner lectura = new Scanner(System.in);
@@ -29,9 +29,12 @@ public class Calculo {
         System.out.print("Ingresar venta3: ");
         venta3 = lectura.nextDouble();
 
+        System.out.print("Ingresar venta4: ");
+        venta4 = lectura.nextDouble();
+
         // Proceso
-        tv = venta1 + venta2 + venta3;
-        promedio = tv / 3;
+        tv = venta1 + venta2 + venta3 + venta4;
+        promedio = tv / 4;
 
         // Salida
         System.out.println("Vendedor: " + empleado);
